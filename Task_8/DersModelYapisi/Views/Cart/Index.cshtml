@@ -1,0 +1,49 @@
+﻿@model List<CartProduct>
+
+<table class="table caption-top">
+    <caption>List of Your Cart</caption>
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Product</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Single Price</th>
+            <th scope="col"> Total Price</th>
+            <th scope="col"></th>
+
+        </tr>
+    </thead>
+    @{
+        var total = Model.Sum(p => p.Product?.Price * p.Quantity);
+        int kdv = 18;
+        var kdvDeger = total * kdv / 100;
+
+    }
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <th scope="row">@product.Product?.Id</th>
+                <td>@product.Product?.Name</td>
+                <td>@product.Quantity</td>
+                <td>
+                    @product.Product?.Price €
+                </td>
+                <td>@(product.Product?.Price*product.Quantity) €</td>
+            </tr>
+        }
+      
+        <tr>
+            <td colspan="4" style="text-align: right;"><strong>  KDV'siz Toplam :</strong></td>
+            <td><strong> @total €</strong></td>
+        </tr>
+        <tr>
+            <td colspan="4" style="text-align: right;"><strong>  KDV Oranı :</strong></td>
+            <td><strong> @kdv %</strong></td>
+        </tr>
+        <tr>
+            <td colspan="4" style="text-align: right;"><strong> KDV'li Toplam :</strong></td>
+            <td><strong>@(total+kdvDeger) €</strong></td>
+        </tr>
+    </tbody>
+</table>

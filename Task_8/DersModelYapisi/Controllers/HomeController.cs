@@ -18,6 +18,5 @@ namespace DersModelYapisi.Controllers
             return View();
         }
 
-      
     }
 }
