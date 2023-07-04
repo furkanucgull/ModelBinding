@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DersModelYapisi", "DersModelYapisi\DersModelYapisi.csproj", "{448B330F-97F5-4894-89E5-096BBC6E1B7E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{448B330F-97F5-4894-89E5-096BBC6E1B7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{448B330F-97F5-4894-89E5-096BBC6E1B7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{448B330F-97F5-4894-89E5-096BBC6E1B7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{448B330F-97F5-4894-89E5-096BBC6E1B7E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1CCAA1B5-20E8-490B-8132-6AE6F88999D1}
+	EndGlobalSection
+EndGlobal
